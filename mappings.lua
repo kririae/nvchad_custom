@@ -31,6 +31,7 @@ M.nvterm = {
   plugin = true,
 
   t = {
+    ["<ESC>"] = { vim.api.nvim_replace_termcodes("<C-\\><C-N>", true, true, true), "Escape terminal mode" },
     -- toggle in terminal mode
     ["<C-\\>"] = {
       function()
