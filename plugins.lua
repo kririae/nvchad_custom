@@ -72,6 +72,23 @@ local plugins = {
     end,
   },
 
+  -- Retain window layout when deleting buffer
+  {
+    "famiu/bufdelete.nvim",
+    lazy = false,
+  },
+
+  {
+    "rmagatti/auto-session",
+    lazy = false,
+    config = function()
+      require("auto-session").setup {
+        log_level = "error",
+        auto_session_suppress_dirs = { "~/", "~/Misc", "~/Downloads", "/" },
+      }
+    end,
+  },
+
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",

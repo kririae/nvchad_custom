@@ -19,11 +19,17 @@ M.general = {
 
 M.leader = {
   n = {
-    ["<leader>h"] = { "<C-w>h" },
-    ["<leader>j"] = { "<C-w>j" },
-    ["<leader>k"] = { "<C-w>k" },
-    ["<leader>l"] = { "<C-w>l" },
-    ["<leader>n"] = { "<cmd> NvimTreeToggle <CR>", "toggle nvimtree" },
+    ["<leader>bd"] = {
+      function()
+        require("bufdelete").bufdelete(0, true)
+      end,
+    },
+
+    -- tab-related management
+    ["<leader>to"] = { ":tabnew <CR>", "Create the tab" },
+    ["<leader>tc"] = { ":tabclose <CR>", "Close the tab" },
+    ["<leader>tn"] = { ":tabnext <CR>", "Go to the next tab" },
+    ["<leader>tp"] = { ":tabprevious <CR>", "Go to the previous tab" },
   },
 }
 

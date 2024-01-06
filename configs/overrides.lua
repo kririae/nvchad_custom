@@ -12,9 +12,6 @@ M.treesitter = {
   },
   indent = {
     enable = true,
-    -- disable = {
-    --   "python"
-    -- },
   },
 }
 
@@ -23,7 +20,6 @@ M.mason = {
     -- lua stuff
     "lua-language-server",
     "stylua",
-
     "prettier",
 
     -- c/cpp stuff
