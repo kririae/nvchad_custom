@@ -7,6 +7,7 @@ M.treesitter = {
     "typescript",
     "c",
     "cpp",
+    "cuda",
     "markdown",
     "markdown_inline",
   },
